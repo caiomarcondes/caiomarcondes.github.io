@@ -49,7 +49,7 @@ Este projeto utiliza as seguintes bibliotecas e ferramentas:
 - `npm install` para instalar dependências
 - `npm run dev` para iniciar o ambiente local
 - `npm run build` para gerar a build de produção
-- `npm run preview` para visualizar a build localmente
+- `npm run preview` para visualizar a build localmente com Wrangler
 - `npm run lint` para validar o código com ESLint
 
 ## Estrutura do projeto
