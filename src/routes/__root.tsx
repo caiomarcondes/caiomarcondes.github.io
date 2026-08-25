@@ -117,6 +117,14 @@ function RootShell({ children }: { children: ReactNode }) {
       </head>
       <body>
         {children}
+
+        <script
+          async
+          defer
+          src="https://tianji.caioit.com/tracker.js"
+          data-website-id="cmt9939440003nnpk77c0p3sb"
+        />
+
         <Scripts />
       </body>
     </html>
