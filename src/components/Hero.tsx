@@ -12,22 +12,22 @@ export function Hero() {
         <div className="relative overflow-hidden rounded-md border border-border px-6 py-20 text-center sm:px-12 sm:py-28">
           <div className="pointer-events-none absolute inset-0 z-0" aria-hidden="true">
             <PixelBlast
-    variant="diamond"
-    pixelSize={2}
+    variant="circle"
+    pixelSize={5}
     color="#B497CF"
-    patternScale={1.25}
-    patternDensity={0.95}
-    pixelSizeJitter={0.6}
-    enableRipples={false}
+    patternScale={2.25}
+    patternDensity={0.55}
+    pixelSizeJitter={0.7}
+    enableRipples
     rippleSpeed={0.4}
     rippleThickness={0.12}
     rippleIntensityScale={1.5}
-    liquid={false}
+    liquid
     liquidStrength={0.12}
     liquidRadius={1.2}
     liquidWobbleSpeed={5}
-    speed={0.4}
-    edgeFade={0.19}
+    speed={0.35}
+    edgeFade={0.5}
     transparent
             />
           </div>
@@ -47,7 +47,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={160}>
-            <p className="mx-auto mt-5 max-w-2xl text-base text-muted-foreground sm:text-lg">
+            <p className="mx-auto mt-5 max-w-2xl text-base text-white sm:text-lg">
               {profile.role}
             </p>
           </Reveal>
