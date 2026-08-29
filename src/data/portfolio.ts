@@ -102,12 +102,6 @@ export const contacts = [
     icon: "linkedin",
   },
   {
-    label: "Instagram",
-    value: "@caiopng",
-    href: "https://www.instagram.com/caiopng/",
-    icon: "instagram",
-  },
-  {
     label: "GitHub",
     value: "/caiomarcondes",
     href: "https://github.com/caiomarcondes",

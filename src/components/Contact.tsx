@@ -1,4 +1,4 @@
-import { Phone, Mail, Linkedin, Instagram, Github, Download, ArrowUpRight } from "lucide-react";
+import { Phone, Mail, Linkedin, Github, Download, ArrowUpRight } from "lucide-react";
 import { contacts, whatsappUrl, profile } from "@/data/portfolio";
 import { Reveal } from "./Reveal";
 
@@ -6,7 +6,6 @@ const icons = {
   phone: Phone,
   mail: Mail,
   linkedin: Linkedin,
-  instagram: Instagram,
   github: Github,
 } as const;
 
