@@ -18,7 +18,7 @@ export function LanguageSwitcher() {
 
   return (
     <div
-      className="flex items-center gap-0.5 rounded-lg border border-border/70 bg-muted/60 p-1"
+      className="ml-9 flex items-center gap-0.5 rounded-sm border border-border/70 bg-muted/60 p-1"
       aria-label="Idioma"
       role="group"
     >
@@ -32,7 +32,7 @@ export function LanguageSwitcher() {
             onClick={() => handleLanguageChange(lang.code)}
             aria-label={lang.languageName}
             aria-pressed={isActive}
-            className={`min-w-8 rounded-md px-2 py-1 text-xs font-semibold transition-colors ${
+            className={`min-w-8 rounded-sm px-2 py-1 text-xs font-semibold transition-colors ${
               isActive
                 ? "bg-primary text-primary-foreground shadow-sm"
                 : "text-muted-foreground hover:bg-background hover:text-foreground"
