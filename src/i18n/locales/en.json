@@ -1,0 +1,98 @@
+{
+  "header": {
+    "title": "CaioIT",
+    "navigation": {
+      "sobre": "About",
+      "skills": "Skills",
+      "competencias": "Competencies",
+      "contato": "Contact",
+      "portfolio": "Portfolio",
+      "status": "Status"
+    },
+    "whatsapp": "WhatsApp",
+    "contact": "Get in touch",
+    "menu": {
+      "open": "Open menu",
+      "close": "Close menu"
+    }
+  },
+  "hero": {
+    "availability": "Available for projects",
+    "resultsTitle": "Results that demonstrate delivery",
+    "intro": "Throughout my career, I have developed skills in hardware and software and constantly seek to improve my abilities with each new challenge. I believe in the power of creativity, innovation, and collaboration to generate impactful and memorable results.",
+    "cta": "Talk to me"
+  },
+  "about": {
+    "label": "About",
+    "title": "Reliable infrastructure, from hardware to the cloud.",
+    "description": "I consider myself a generalist professional, with knowledge spanning several areas of technology and diverse skills across related environments. With a natural interest in the field from an early age, I began my journey as a teenager with online games, managing servers and working on Full Stack development."
+  },
+  "stats": {
+    "experience": "Years of experience",
+    "projects": "Projects delivered",
+    "uptime": "Guaranteed uptime",
+    "support": "24/7 Support"
+  },
+  "skills": {
+    "title": "Skills",
+    "programming": "Programming",
+    "databases": "Databases",
+    "operatingSystems": "Operating Systems",
+    "aws": "Amazon Web Services",
+    "gcp": "Google Cloud",
+    "languages": ["JavaScript", "Python", "Dart", "HTML", "PHP", "CSS"],
+    "dbs": ["Microsoft SQL Server", "SQLite", "MongoDB", "MySQL", "PostgreSQL"],
+    "os": [
+      "Ubuntu Server 16.04 to 24.04",
+      "Windows Server 2001 to 2019",
+      "Windows 7 to 11",
+      "Ubuntu Desktop",
+      "Debian 10 to 12"
+    ],
+    "awsServices": ["Amazon CloudWatch", "Amazon EC2", "Amazon RDS", "Amazon S3"],
+    "gcpServices": ["Cloud Functions", "Compute Engine", "Cloud Storage", "Cloud SQL", "Firebase"]
+  },
+  "competencies": {
+    "title": "Competencies",
+    "infrastructure": {
+      "title": "Network Infrastructure",
+      "description": "Configuration and management of enterprise networks with high availability and performance."
+    },
+    "security": {
+      "title": "Information Security",
+      "description": "Implementation of security policies, firewalls and threat monitoring."
+    },
+    "servers": {
+      "title": "Server Administration",
+      "description": "Management of Windows and Linux servers, virtualization and containers."
+    },
+    "cloud": {
+      "title": "Cloud Computing",
+      "description": "Architecture and migration to AWS and Google Cloud with cost optimization."
+    },
+    "automation": {
+      "title": "Automation",
+      "description": "Scripts and process automation to increase operational efficiency."
+    },
+    "monitoring": {
+      "title": "Monitoring",
+      "description": "Real-time dashboards and alerts to ensure maximum availability."
+    }
+  },
+  "contact": {
+    "title": "Get in touch",
+    "description": "Have a project in mind? Let's work together!",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send message"
+  },
+  "footer": {
+    "copyright": "© 2024 Caio Marcondes. All rights reserved.",
+    "links": "Links"
+  },
+  "profile": {
+    "name": "Caio Marcondes",
+    "role": "Systems Analyst & Infrastructure"
+  }
+}

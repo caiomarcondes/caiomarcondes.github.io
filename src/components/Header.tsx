@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { navLinks, whatsappUrl } from "@/data/portfolio";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
+  const { t } = useTranslation();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -38,7 +41,7 @@ export function Header() {
               href={link.href}
               className="rounded-full px-4 py-2 text-sm text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
             >
-              {link.label}
+              {t(`header.navigation.${link.label}`)}
             </a>
           ))}
           <a
@@ -49,7 +52,7 @@ export function Header() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75"></span>
               <span className="relative inline-flex size-2 rounded-full bg-emerald-500"></span>
             </span>
-            Status
+            {t("header.navigation.status")}
           </a>
         </nav>
 
@@ -67,15 +70,16 @@ export function Header() {
             href="#contato"
             className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
           >
-            Entre em contato
+            {t("header.contact")}
           </a>
+          <LanguageSwitcher />
         </div>
 
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
-          aria-label={open ? "Fechar menu" : "Abrir menu"}
+          aria-label={open ? t("header.menu.close") : t("header.menu.open")}
           className="grid size-10 place-items-center rounded-xl border border-border lg:hidden"
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
@@ -92,7 +96,7 @@ export function Header() {
                 onClick={() => setOpen(false)}
                 className="rounded-xl px-4 py-3 text-base text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
               >
-                {link.label}
+                {t(`header.navigation.${link.label}`)}
               </a>
             ))}
             <a
@@ -104,14 +108,14 @@ export function Header() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75"></span>
                 <span className="relative inline-flex size-2 rounded-full bg-emerald-500"></span>
               </span>
-              Status
+              {t("header.navigation.status")}
             </a>
             <a
               href="#contato"
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full bg-primary px-5 py-3 text-center text-sm font-semibold text-primary-foreground"
             >
-              Entre em contato
+              {t("header.contact")}
             </a>
           </nav>
         </div>

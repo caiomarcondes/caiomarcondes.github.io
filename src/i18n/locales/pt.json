@@ -1,0 +1,98 @@
+{
+  "header": {
+    "title": "CaioIT",
+    "navigation": {
+      "sobre": "Sobre",
+      "skills": "Skills",
+      "competencias": "Competências",
+      "contato": "Contato",
+      "portfolio": "Portfólio",
+      "status": "Status"
+    },
+    "whatsapp": "WhatsApp",
+    "contact": "Entre em contato",
+    "menu": {
+      "open": "Abrir menu",
+      "close": "Fechar menu"
+    }
+  },
+  "hero": {
+    "availability": "Disponível para projetos",
+    "resultsTitle": "Resultados que comprovam a entrega",
+    "intro": "Ao longo da minha trajetória, desenvolvi habilidades em hardware e software e busco constantemente aprimorar minhas capacidades com cada novo desafio. Acredito no poder da criatividade, inovação e colaboração para gerar resultados impactantes e memoráveis.",
+    "cta": "Fale comigo"
+  },
+  "about": {
+    "label": "Sobre",
+    "title": "Infraestrutura confiável, do hardware à nuvem.",
+    "description": "Considero-me um profissional generalista, com conhecimentos que abrangem diversas áreas da tecnologia e habilidades diversificadas em ambientes correlacionados. Com um interesse nativo pela área desde cedo, iniciei minha trajetória na adolescência com jogos online, atuando no gerenciamento de servidores e no desenvolvimento Fullstack."
+  },
+  "stats": {
+    "experience": "Anos de experiência",
+    "projects": "Projetos entregues",
+    "uptime": "Uptime garantido",
+    "support": "Suporte técnico"
+  },
+  "skills": {
+    "title": "Skills",
+    "programming": "Programação",
+    "databases": "Banco de Dados",
+    "operatingSystems": "Sistemas Operacionais",
+    "aws": "Amazon Web Services",
+    "gcp": "Google Cloud",
+    "languages": ["JavaScript", "Python", "Dart", "HTML", "PHP", "CSS"],
+    "dbs": ["Microsoft SQL Server", "SQLite", "MongoDB", "MySQL", "PostgreSQL"],
+    "os": [
+      "Ubuntu Server 16.04 a 24.04",
+      "Windows Server 2001 a 2019",
+      "Windows 7 a 11",
+      "Ubuntu Desktop",
+      "Debian 10 a 12"
+    ],
+    "awsServices": ["Amazon CloudWatch", "Amazon EC2", "Amazon RDS", "Amazon S3"],
+    "gcpServices": ["Cloud Functions", "Compute Engine", "Cloud Storage", "Cloud SQL", "Firebase"]
+  },
+  "competencies": {
+    "title": "Competências",
+    "infrastructure": {
+      "title": "Infraestrutura de Rede",
+      "description": "Configuração e gerenciamento de redes empresariais com alta disponibilidade e performance."
+    },
+    "security": {
+      "title": "Segurança da Informação",
+      "description": "Implementação de políticas de segurança, firewalls e monitoramento de ameaças."
+    },
+    "servers": {
+      "title": "Administração de Servidores",
+      "description": "Gestão de servidores Windows e Linux, virtualização e containers."
+    },
+    "cloud": {
+      "title": "Cloud Computing",
+      "description": "Arquitetura e migração para AWS e Google Cloud com otimização de custos."
+    },
+    "automation": {
+      "title": "Automação",
+      "description": "Scripts e automação de processos para aumentar eficiência operacional."
+    },
+    "monitoring": {
+      "title": "Monitoramento",
+      "description": "Dashboards e alertas em tempo real para garantir máxima disponibilidade."
+    }
+  },
+  "contact": {
+    "title": "Entre em contato",
+    "description": "Tem um projeto em mente? Vamos trabalhar juntos!",
+    "email": "Email",
+    "phone": "Telefone",
+    "message": "Mensagem",
+    "send": "Enviar mensagem"
+  },
+  "footer": {
+    "copyright": "© 2024 Caio Marcondes. Todos os direitos reservados.",
+    "links": "Links"
+  },
+  "profile": {
+    "name": "Caio Marcondes",
+    "role": "Analista de Sistemas & Infraestrutura"
+  }
+}

@@ -1,12 +1,15 @@
+import { useTranslation } from "react-i18next";
 import { profile, navLinks, contacts } from "@/data/portfolio";
 
 export function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="border-t border-border py-12">
       <div className="mx-auto flex max-w-[1200px] flex-col gap-8 px-5 sm:px-8 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="font-display text-base font-semibold">{profile.name}</p>
-          <p className="mt-1 text-sm text-muted-foreground">{profile.role}</p>
+          <p className="mt-1 text-sm text-muted-foreground">{t("profile.role")}</p>
         </div>
 
         <nav aria-label="Rodapé" className="flex flex-wrap gap-x-5 gap-y-2">
@@ -16,7 +19,7 @@ export function Footer() {
               href={link.href}
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
-              {link.label}
+              {t(`header.navigation.${link.label}`)}
             </a>
           ))}
         </nav>
@@ -32,13 +35,13 @@ export function Footer() {
                 rel="noreferrer"
                 className="text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
-                {c.label}
+                {t(`profile.${c.label}`, { defaultValue: c.label })}
               </a>
             ))}
         </div>
       </div>
       <p className="mx-auto mt-8 max-w-[1200px] px-5 text-xs text-muted-foreground sm:px-8">
-        © {new Date().getFullYear()} {profile.name}. Todos os direitos reservados.
+        {t("footer.copyright").replace("2024", String(new Date().getFullYear()))}
       </p>
     </footer>
   );

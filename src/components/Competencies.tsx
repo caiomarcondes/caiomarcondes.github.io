@@ -1,5 +1,6 @@
 import { Network, ShieldCheck, Server, Cloud, Workflow, Activity, Check } from "lucide-react";
-import { competencies, reasons, profile } from "@/data/portfolio";
+import { useTranslation } from "react-i18next";
+import { competenciesData } from "@/data/portfolio";
 import { Reveal } from "./Reveal";
 
 const icons = {
@@ -11,14 +12,34 @@ const icons = {
   monitor: Activity,
 } as const;
 
+const competencyKeys = [
+  "infrastructure",
+  "security",
+  "servers",
+  "cloud",
+  "automation",
+  "monitoring",
+];
+
+const reasonKeys = [
+  "Resolução rápida de incidentes",
+  "Documentação técnica detalhada",
+  "Planejamento de capacidade",
+  "Backup e disaster recovery",
+  "Otimização de performance",
+  "Suporte técnico especializado",
+];
+
 export function Competencies() {
+  const { t } = useTranslation();
+
   return (
     <section id="competencias" className="py-24 sm:py-5">
       <div className="mx-auto max-w-[1200px] px-5 sm:px-8">
         <Reveal>
           <div className="max-w-2xl">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
-              Competências
+              {t("competencies.title")}
             </p>
             <h2 className="mt-4 text-3xl font-medium leading-tight sm:text-5xl">
               Áreas de expertise
@@ -30,17 +51,20 @@ export function Competencies() {
         </Reveal>
 
         <div className="mt-14 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {competencies.map((item, i) => {
+          {competenciesData.map((item, i) => {
             const Icon = icons[item.icon];
+            const competencyKey = competencyKeys[i];
             return (
-              <Reveal key={item.title} delay={i * 60}>
+              <Reveal key={competencyKey} delay={i * 60}>
                 <article className="card-surface rounded-md h-full p-6">
                   <span className="grid size-11 place-items-center rounded-md bg-primary/15 text-primary">
                     <Icon className="size-5" aria-hidden="true" />
                   </span>
-                  <h3 className="mt-5 font-display text-lg font-semibold">{item.title}</h3>
+                  <h3 className="mt-5 font-display text-lg font-semibold">
+                    {t(`competencies.${competencyKey}.title`)}
+                  </h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                    {item.description}
+                    {t(`competencies.${competencyKey}.description`)}
                   </p>
                 </article>
               </Reveal>
@@ -53,7 +77,7 @@ export function Competencies() {
             <div>
               <h3 className="text-2xl font-medium sm:text-3xl">Por que me escolher?</h3>
               <ul className="mt-7 grid gap-3 sm:grid-cols-2">
-                {reasons.map((reason) => (
+                {reasonKeys.map((reason) => (
                   <li key={reason} className="flex items-start gap-3 text-sm text-muted-foreground">
                     <Check className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
                     {reason}
