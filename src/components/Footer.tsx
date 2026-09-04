@@ -40,9 +40,10 @@ export function Footer() {
             ))}
         </div>
       </div>
-      <p className="mx-auto mt-8 max-w-[1200px] px-5 text-xs text-muted-foreground sm:px-8">
-        {t("footer.copyright").replace("2024", String(new Date().getFullYear()))}
-      </p>
+      <div className="mx-auto mt-8 flex max-w-[1200px] items-center justify-between gap-4 px-5 text-xs text-muted-foreground sm:px-8">
+        <p>{t("footer.copyright").replace("2024", String(new Date().getFullYear()))}</p>
+        <span>Build v2.0.6</span>
+      </div>
     </footer>
   );
 }

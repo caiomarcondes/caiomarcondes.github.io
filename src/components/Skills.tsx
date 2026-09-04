@@ -36,10 +36,10 @@ export function Skills() {
               {t("skills.title")}
             </p>
             <h2 className="mt-4 text-3xl font-medium leading-tight sm:text-5xl">
-              Tecnologias e ferramentas
+              {t("skills.heading")}
             </h2>
             <p className="mt-4 text-base text-muted-foreground sm:text-lg">
-              Tecnologias e ferramentas que domino para entregar soluções robustas e escaláveis.
+              {t("skills.description")}
             </p>
           </div>
         </Reveal>

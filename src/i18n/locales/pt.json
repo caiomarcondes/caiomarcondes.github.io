@@ -35,6 +35,8 @@
   },
   "skills": {
     "title": "Skills",
+    "heading": "Tecnologias e ferramentas",
+    "description": "Tecnologias e ferramentas que domino para entregar soluções robustas e escaláveis.",
     "programming": "Programação",
     "databases": "Banco de Dados",
     "operatingSystems": "Sistemas Operacionais",
@@ -80,6 +82,12 @@
     }
   },
   "contact": {
+    "label": "Contato",
+    "heading": "Vamos conversar?",
+    "intro": "Estou disponível para novos projetos e oportunidades. Entre em contato pelos canais abaixo.",
+    "interestTitle": "Achou interessante?",
+    "interestDescription": "Para uma visão abrangente das minhas habilidades e experiências, sinta-se à vontade para entrar em contato.",
+    "whatsapp": "Falar no WhatsApp",
     "title": "Entre em contato",
     "description": "Tem um projeto em mente? Vamos trabalhar juntos!",
     "email": "Email",

@@ -35,6 +35,8 @@
   },
   "skills": {
     "title": "Skills",
+    "heading": "Technologies and tools",
+    "description": "Technologies and tools I master to deliver robust and scalable solutions.",
     "programming": "Programming",
     "databases": "Databases",
     "operatingSystems": "Operating Systems",
@@ -80,6 +82,12 @@
     }
   },
   "contact": {
+    "label": "Contact",
+    "heading": "Let's talk?",
+    "intro": "I'm available for new projects and opportunities. Get in touch through the channels below.",
+    "interestTitle": "Interested?",
+    "interestDescription": "For a comprehensive overview of my skills and experience, feel free to get in touch.",
+    "whatsapp": "Talk on WhatsApp",
     "title": "Get in touch",
     "description": "Have a project in mind? Let's work together!",
     "email": "Email",

@@ -1,4 +1,5 @@
 import { Phone, Mail, Linkedin, Github, Download, ArrowUpRight } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import { contacts, whatsappUrl, profile } from "@/data/portfolio";
 import { Reveal } from "./Reveal";
 
@@ -10,20 +11,21 @@ const icons = {
 } as const;
 
 export function Contact() {
+  const { t } = useTranslation();
+
   return (
     <section id="contato" className="py-24 sm:py-32">
       <div className="mx-auto max-w-[1200px] px-5 sm:px-8">
         <Reveal>
           <div className="max-w-2xl">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
-              Contato
+              {t("contact.label")}
             </p>
             <h2 className="mt-4 text-3xl font-medium leading-tight sm:text-5xl">
-              Vamos conversar?
+              {t("contact.heading")}
             </h2>
             <p className="mt-4 text-base text-muted-foreground sm:text-lg">
-              Estou disponível para novos projetos e oportunidades. Entre em contato pelos canais
-              abaixo.
+              {t("contact.intro")}
             </p>
           </div>
         </Reveal>
@@ -64,10 +66,9 @@ export function Contact() {
           <Reveal delay={120}>
             <div className="aurora flex h-full flex-col justify-between gap-8 rounded-md border border-border p-8">
               <div>
-                <h3 className="font-display text-xl font-semibold">Achou interessante?</h3>
+                <h3 className="font-display text-xl font-semibold">{t("contact.interestTitle")}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                  Para uma visão abrangente das minhas habilidades e experiências, sinta-se à
-                  entrar em contato.
+                  {t("contact.interestDescription")}
                 </p>
               </div>
               <div className="flex flex-col gap-3">
@@ -77,7 +78,7 @@ export function Contact() {
                   rel="noreferrer"
                   className="inline-flex items-center justify-center rounded-full border border-border bg-background/40 px-6 py-3 text-sm font-semibold backdrop-blur transition-colors hover:bg-secondary"
                 >
-                  Falar no WhatsApp
+                  {t("contact.whatsapp")}
                 </a>
               </div>
             </div>
